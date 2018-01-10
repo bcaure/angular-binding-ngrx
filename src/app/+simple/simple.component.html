@@ -1,0 +1,17 @@
+<div class="grid component">
+
+  <h1 class="sample-content" folding>One-way databinding</h1>
+  <span><![CDATA[<input [ngModel]="oneWay" (input)="oneWay=$event.target.value"]]> </span> 
+  <input type="text" [ngModel]="oneWay" (input)="oneWay=$event.target.value" /> 
+  <span>{{ oneWay }}</span>
+
+</div>
+
+<div class="grid component">
+
+  <h1 class="sample-content" folding>Two-way databinding</h1>
+  <span><![CDATA[<input [(ngModel)]="twoWay"]]> </span> 
+  <input type="text" [(ngModel)]="twoWay" /> 
+  <span>{{ twoWay }}</span>
+
+</div>
